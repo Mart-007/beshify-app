@@ -31,7 +31,7 @@ const App = () => {
   return (
     <>
       <div className='container'>
-      <div className='title'>Beshify App Langging</div>
+      <div className='title'>Beshify App</div>
         <div className='body'>
           <textarea name="text" cols="40" rows="1" value={text} onChange={handleChange}/>
           <div className='copy-text' onClick={() => copyToClipBoard(formatText(text))}>
@@ -39,8 +39,6 @@ const App = () => {
             <FontAwesomeIcon icon={faCopy} />
           </div>
           <div>{formatText(text)}</div>
-          
-          
         </div>
       </div>
     </>
