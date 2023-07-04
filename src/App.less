@@ -1,0 +1,48 @@
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: rgb(89, 88, 88);
+  
+
+  .container {
+    // border: solid #fff 1px;
+    display: grid;
+    grid-template-rows: 80px 70px 80px;
+    grid-template-columns: 30px 1fr 30px;
+    .title {
+      font-family: "Helvetica Neue",Helvetica,Arial;
+      color: rgb(227, 225, 225);
+      width: 200px;
+      margin-top: 60px;
+      margin-left: 30px;
+    }
+    .body {
+      border-radius: 3px;
+      grid-row: 2/3;
+      grid-column: 2/3;
+      text-align: center;
+      background: rgb(203, 201, 201);
+      font-family: "Helvetica Neue",Helvetica,Arial;
+      overflow: auto;
+
+      .copy-text {
+        width: 35px;
+        font-size: 8px;
+        float: right;
+        color: rgb(105, 105, 105);
+        padding: 4px;
+      }
+
+      textarea {
+        margin-top: 5px;
+        background: rgb(162, 162, 162);
+        border-radius: 3px;
+      }
+      textarea:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
